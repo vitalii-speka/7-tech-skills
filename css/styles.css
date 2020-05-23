@@ -1,0 +1,15 @@
+.body {
+    color: #000;
+    /* p20px+m10px+fw:400 */
+    padding: 20px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.selector {
+    position: static; poss
+    position: fixed; post   
+    top: 100px; t:100
+    left: 50px; l:50
+    top: auto; t:a
+}
