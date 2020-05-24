@@ -1,93 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7 Tech Skills. HTML5 это просто</title>
-</head>
-<body>
-    
-    <!-- примеры тегов: -->
-    <nav></nav>
-    <header<></header>
-    <p></p>
-    <table></table>
-    <button></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>7 Tech Skills. HTML5 это просто</title>
 
-    <!-- атрибуты: -->
-    <a href="http://google.com" class="link">google</a>
-    <img src="cat.jpg" alt="cute cat" />
-    <input tupe="text" name="user_name" />
-    <button type="submit">...</button>
-    <p class="text">...</p>
+        <nav>
+            <a href="/">Логотип сайта</a>
 
-    <img src="http://image.ibb.co/esKkpv/if_free_28_616649.png"
-         alt="Картина на тему путишествий"
-    />
+            <!-- Навигация на другие страницы -->
+            <ul>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
 
-    <!-- парные теги -->
-    <h1>Кратко о тегах</h1>
-        <p>Большинство тегов праные. Их контент, то что отобаржаеться на веб-странице,
-            заключен между открывающим и закрывающим тегом.
+    </head>
+    <body>
+        
+        <!-- примеры тегов: -->
+        <nav></nav>
+        <header<></header>
+        <p></p>
+        <table></table>
+        <button></button>
+
+        <!-- атрибуты: -->
+        <a href="http://google.com" class="link">google</a>
+        <img src="cat.jpg" alt="cute cat" />
+        <input tupe="text" name="user_name" />
+        <button type="submit">...</button>
+        <p class="text">...</p>
+
+        <img src="http://image.ibb.co/esKkpv/if_free_28_616649.png"
+            alt="Картина на тему путишествий"
+        />
+
+        <!-- парные теги -->
+        <h1>Кратко о тегах</h1>
+            <p>Большинство тегов праные. Их контент, то что отобаржаеться на веб-странице,
+                заключен между открывающим и закрывающим тегом.
+            </p>
+
+
+        <!-- одиночные теги -->
+        
+        <!-- Метаинфорация о кодировке -->
+        <meta charset="utf-8"/>
+
+        <!-- поле вода -->
+        <input type="text" />
+
+        <!-- Изображение -->
+        <img src="cat.jpg" alt="cool cat" />
+
+        <!-- порядок вложения тегов (принцып матрешки) -->
+        <тег1>
+            <тег2>
+                <тег4></тег4>
+                <тег5></тег5>
+            </тег2>
+            <тег3>
+                <тег6></тег6>
+            </тег3>
+        </тег1>
+
+        <!-- валидация разметки абзаца со ссылкой и выделенным текстом, а также преимуществ с описанием. -->
+        <p>
+            <a href="squoosh.app">Squoosh</a> - сервис <em>оптимизация</em> изображения.
         </p>
 
+        <!-- p+ul>li*3 -->
+        <p>Преимущества</p>
+            <ul>
+                <li>Работает в браузере</li>
+                <li>Не грузит систему</li>
+                <li>Удобный интерфейс</li>
+            </ul>
 
-    <!-- одиночные теги -->
+        <!-- Поток документов: блончые и строчные  -->
+        <p>Блочный</p>
+        <p>Блочный</p>
+        <p>Блочный</p>
+
+        <a href="">Строчный</a>
+        <a href="">Строчный</a>
+        <a href="">Строчный</a>
+
+        <!-- Абзац -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque exercitationem esse vitae, itaque eaque incidunt numquam illum ex! Delectus, non.</p>
+        
+        <!-- Заголовки -->
+        <h1>Заголовок всей страницы</h1>
+        <h2>Заголовок всей статьи</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h3>Заголовок первой секции статьи</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, nisi.</p>
+        <h4>Заголовок подсекции для первой секции</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus nulla possimus?</p>
+        <h3>Заголовок второй секции статьи</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, nisi.</p>
+        <h4>Заголовок подсекции для второй секции</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus nulla possimus?</p>
+
+        <h1>Как заварить чай</h1>
+        <p>Пошаговая инструкция для чайников, просто повтори и у тебя все получится!</p>
+        <ol>
+            <li>Закипятить вод</li>
+            <li>Засыпать чай в чашку</li>
+            <li>Налить в чашку кипяток</li>
+            <li>Ждать 10 минут, после чего можно пить</li>
+        </ol>
     
-    <!-- Метаинфорация о кодировке -->
-    <meta charset="utf-8"/>
-
-    <!-- поле вода -->
-    <input type="text" />
-
-    <!-- Изображение -->
-    <img src="cat.jpg" alt="cool cat" />
-
-    <!-- порядок вложения тегов (принцып матрешки) -->
-    <тег1>
-        <тег2>
-            <тег4></тег4>
-            <тег5></тег5>
-        </тег2>
-        <тег3>
-            <тег6></тег6>
-        </тег3>
-    </тег1>
-
-    <!-- валидация разметки абзаца со ссылкой и выделенным текстом, а также преимуществ с описанием. -->
-
-    <p>
-        <a href="squoosh.app">Squoosh</a> - сервис <em>оптимизация</em> изображения.
-    </p>
-
-    <!-- p+ul>li*3 -->
-    <p>Преимущества</p>
+        <h1>Самые горячие курорты</h1>
+        <p>В этом году эксперты рекомендуют посетить следующие локации</p>
         <ul>
-            <li>Работает в браузере</li>
-            <li>Не грузит систему</li>
-            <li>Удобный интерфейс</li>
+            <li>тунис</li>
+            <li>турция</li>
+            <li>Египет</li>
+            <li>Греция</li>
         </ul>
 
-    Поток документов: блончые и строчные 
+        <!-- ul>li*3>ul>li*3 -->
+        <ul>
+            <li> Комьютеры и комплектующие
+                <ul>
+                    <li>Процессоры</li>
+                    <li>Мониторы</li>
+                    <li>Видеокарты</li>
+                </ul>
+            </li>
+            <li> Бытовая техника
+                <ul>
+                    <li>Холодильники</li>
+                    <li>Телевизоры</li>
+                    <li>Стиральные машины</li>
+                </ul>
+            </li>
+            <li> Товары для дома
+                <ul>
+                    <li>Кресла</li>
+                    <li>Матрасы</li>
+                    <li>Электрокамины</li>
+                </ul>
+            </li>
+        </ul>
 
-    <p>Блочный</p>
-    <p>Блочный</p>
-    <p>Блочный</p>
+        <a href="http:google.com">Ссылка на главную страницу Google</a>
 
-    <a href="">Строчный</a>
-    <a href="">Строчный</a>
-    <a href="">Строчный</a>
-    
+        <!-- Ссылка на внешний ресурс, откроется в текущей вкладке -->
+        <a href="http:www.fecebook.com">Fecebook</a>
+
+        <!-- Ссылка на внешний ресурс, откроется в новой вкладке -->
+        <a href="http:www.fecebook.com" target="_blank" rel="noreferrer noopener">
+            Fecebook
+        </a>
+
+        <!-- Ссылка на скачивание файла -->
+        <a href="/путь/к/cv.pdf" download>Скачать резюме</a>
+
+        <!-- Ссылка на телефонный номер -->
+        <a href="tel:+1425858522">+1 425 123 315</a>
+        
+        <!-- Ссылка на адрес электронной почты  -->
+        <a href="mailto:spekava@gmail.com">spekava@gmail.com</a>
+        <!-- Ссылка на скайп (позвонить) -->
+        <a href="skype:name?call">Call on Skype</a>
+
+        <!-- Ссылка на скайп (открыть чат) -->
+        <a href="skype:name?chat">Chat on Skype</a>
+
+        <!-- Ссылка на скайп (добавить в список контактов) -->
+        <a href="skype:name?add">Add to Skype</a>
+
+        <!-- Ссылка на скайп (отправить файл) -->
+        <a href="skype:name?sendfile">Send file on Skype</a>
+        
+
+        <a href="#feedback">Отзывы</a>
+
+        <h1 id="feedbeck">Отзывы о компании</h1>
+        
+        <p>инструкция по эксплуатаци</p>
+        <p lang="en">Operating instructions</p>
+        <p lang="fr">Manuel d'utilisation</p>
+
+        <img src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg"
+        alt="Macbook Air на сером деревянном столе"
+        width="400"
+        >
+        <a href="http://www.pexels.com/photo/animals-sweet-cat-kitty-57416/">
+            <img 
+            src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?w=640" 
+            alt="Рыжий кот"
+            width="640"
+            />
+        </a>
+        
+        <figure>
+            <!-- Произвольный графический контент: фотография, график, диаграмма и т. п. -->
+            <img src="адрес изображения" alt="альтернативный текст">
+            <figcaption>Текст пояснения который будет под изображением</figcaption>
+        </figure>
+        
+        <a href="https://images.pexels.com/photos/583842/pexels-photo-583842.jpeg">
+            https://images.pexels.com/photos/583842/pexels-photo-583842.jpeg
+        </a>
+
+        <a href="/">
+            <img src="./images.logo.pnd" alt="Логотип сайта">    
+        </a>
+
+        <!-- Уникальный контент страницы -->
+        <main></main>
 
 
-
-
-
-
-
-
-
-
-
-</body>
+        <!-- Подвал страницы (ftr>p+ul>li(a)*3)-->
+        <footer>
+            <!-- Копирайт -->
+            <p>Все права защищены &copy;lpj.dev</p>
+            <!-- Ссылки на соцсети -->
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
