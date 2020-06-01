@@ -1,15 +1,73 @@
-.body {
-    color: #000;
-    /* p20px+m10px+fw:400 */
-    padding: 20px;
-    margin: 10px;
-    font-weight: 400;
+/* Применится ко всем ссылкам на странице */
+a {
+	text-decoration: none;
 }
 
-.selector {
-    position: static; poss
-    position: fixed; post   
-    top: 100px; t:100
-    left: 50px; l:50
-    top: auto; t:a
+/* Применится ко всем тегам с классом title */
+.title {
+	font-weight: 500;
 }
+
+/* Применится ко всем тегам с классом text */
+.text {
+	color: red;
+	font-size: 18px;
+}
+
+#title {
+	font-weight: 700;
+	color: orange;
+}
+
+.logo-title {
+	color: #2196f3;
+}
+
+.social-links {
+	color: red;
+	/* color-ref: red; */
+	text-decoration: none;
+}
+
+/* Если использовать селектор потомка (контекстный), то CSS-правило применится ко всем тегам <li>, и синяя рамка будет у каждого. */
+.menu li {
+	border: 10px solid red;
+}
+
+/* Селектор ребёнка помогает решить эту проблему, выбрав только те <li>, которые являются детьми (первая вложенность) списка ul.menu. */
+.menu > li {
+	border: 5px solid blueviolet;
+}
+
+/* a[title] {
+    color: teal;
+  } */
+
+/* Непривычное форматирование фигурных скобок это нормально */
+a[href="https://htmlreference.io"]
+{
+	color: teal;
+}
+
+a[href="https://cssreference.io"]
+{
+	color: orange;
+}
+
+a[href="https://www.youtube.com"]
+{
+	color: red;
+}
+
+/* Активируется когда курсор мыши находится в пределах элемента, 
+например при наведении мыши на ссылку. */
+.link-nav {
+	color: #212121;
+}
+
+.link-nav:hover,
+.link-nav:focus {
+	color: #2196f3;
+}
+
+/* .link-nav:focus */
