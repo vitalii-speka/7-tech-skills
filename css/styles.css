@@ -61,13 +61,125 @@ a[href="https://www.youtube.com"]
 
 /* Активируется когда курсор мыши находится в пределах элемента, 
 например при наведении мыши на ссылку. */
-.link-nav {
+.nav-link .nav {
 	color: #212121;
 }
 
-.link-nav:hover,
-.link-nav:focus {
+.nav-link .link:hover,
+.nav-link .link:focus {
 	color: #2196f3;
 }
 
+.nav-link .link:active {
+	color red;
+}
+
+/* .nav-link .link:visited {
+  color: green;
+} */
+
+
 /* .link-nav:focus */
+
+.schedule-body > tr:hover {
+  background-color: orange;
+}
+
+/* Оформление таблицы */
+.schedule {
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+	/* размер таблицы */
+  padding: 28px;
+  	/* толщина рамки */
+  border: 5px solid #8d0d0d;
+}
+
+/* Чистый красный цвет: 255 красного, 0 зеленого, 0 синего */
+/* p {
+  color: rgb(255, 0, 0);
+} */
+	 /* Чистый красный цвет: 100% красного, 0% зеленого, 0% синего */
+/* .text {
+  color: rgb(60%, 25%, 88%);
+} */
+
+
+/* Чистый красный цвет: ff (100%) красного, 00 (0%) зеленого, 00 (0%) синего */
+/* .text {
+  color: #ff0000;
+}
+
+Чистый зелёный цвет: 00 (0%) красного, ff (100%) зеленого, 00 (0%) синего */
+/* .text {
+  color: #00ff00;
+} */
+
+/* Чистый синий цвет: 00 (0%) красного, 00 (0%) зеленого, ff (100%) синего */
+/* .text {
+    background-color: rgba(255, 0, 0, 0.1);
+} */
+
+/* Специфичность - 0 0 0 1 */
+/* p {
+  color: green;
+} */
+
+/* ✅ Специфичность - 0 0 0 2 */
+/* article > p {
+  color: orange;
+} */
+
+/* Специфичность - 0 0 1 0 */
+.post-title {
+  color: green;
+}
+
+/* Специфичность - 0 0 1 1 */
+/* .post > h1 {
+  color: red;
+} */
+
+/* ✅ Специфичность - 0 0 2 0 */
+/* .post > .post-title {
+  color: orange; */
+/* } */
+
+/* Специфичность - 0 0 0 1
+a {
+  color: green;
+}
+
+/* Специфичность - 0 0 1 0 */
+/* .post-link {
+  color: orange;
+} */
+
+/* Специфичность - 0 0 1 1 */
+/* a.post-link {
+  color: blue;
+} */
+
+/* Специфичность - 0 0 2 0 */
+/* .post > .post-link {
+  color: red;
+} */
+
+/* ✅ Специфичность - 0 0 2 1 */
+/* .post > a.post-link {
+  color: brown; */
+} */
+
+.post {
+  color: green;
+}
+
+.post-link {
+  color: inherit;
+}
+
+
+

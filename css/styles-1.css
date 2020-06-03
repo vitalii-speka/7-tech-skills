@@ -1,0 +1,80 @@
+.text > span {
+	/* text-decoration: none |underline | line-through | overline
+    none - ничего
+    underline - подчеркнутый
+    line-through - перечеркнутый текст
+    overline - над строкой*/
+
+	text-decoration: overline;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+/* text-transform: none | uppercase - ЗАГЛАВНЫЕ | lowercase - с мальенькой 
+| capitaliz - первая большая */
+
+.site-nav .link {
+	text-transform: lowercase;
+}
+
+/* .post-title {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-justify {
+	text-align: justify;
+} */
+
+/* line-height
+Устанавливает межстрочный интервал 
+line-height: множитель | значение | проценты | normal | inherit*/
+.post-text {
+	text-indent: 50px;
+	font-size: 16px;
+	line-height: 2.5;
+	letter-spacing: 1px;
+	/* white-space: pre-wrap; */
+}
+
+.post-title {
+	font-size: 40 px;
+	font-weight: 900;
+	color: #ffffff;
+	text-shadow: 2px 2px 20px #2f00ff, 5px 5px 5px #000000;
+}
+
+/* Поменяем местами жирность текста заголовка и абзаца */
+.title {
+	font-weight: 400;
+	font-style: italic;
+	text-shadow: 2px 2px 50px #2f00ff;
+}
+
+.text {
+	font-weight: 700;
+}
+
+pre {
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #2a2a2a;
+	font-size: 16px;
+}
+
+/* Псевдоэлемент ::first-letter Управляет стилем первого символа в тексте элемента к которому добавляется. */
+pre::first-letter {
+	font-family: "Tahoma", serif;
+	font-size: 32px;
+	color: #f44336;
+}
+
+/* Псевдоэлемент ::selection Управляет стилем выделения текста элемента */
+pre::selection {
+	color: #ffffff;
+	background-color: #c7149a;
+}
