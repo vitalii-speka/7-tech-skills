@@ -21,3 +21,12 @@
 .icon:focus {
 	fill: #ff715b;
 }
+
+
+.list-item:nth-child(3) {
+  background-color: orange;
+}
+
+.list-item:nth-child(5) {
+  background-color: orange;
+}
