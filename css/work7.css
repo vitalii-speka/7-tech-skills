@@ -30,3 +30,14 @@
 .list-item:nth-child(5) {
   background-color: orange;
 }
+
+.icon1 {
+	width: 150px;
+	height: 150px;
+	padding: 350px;
+	border: 2px solid blue;}
+
+.icon1:hover .letter {
+	fill: currentColor;
+	background-color: royalblue;
+}
