@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/work11-12.css" />
+</head>
+
+<body>
+
+	<label for="avatar">Загрузить аватар</label>
+	<input type="file" id="avatar" name="avatar" accept="all" />
+
+
+	<label for="age">Возраст</label>
+	<input id="age" type="range" name="age" min="0" max="120" value="30" />
+
+	<label for="age">Возраст</label>
+
+	<input id="age" name="age" type="number" min="18" max="120" step="0.3" />
+
+	<div role="group">
+		<p>Чем вы увлекаетесь?:</p>
+
+		<label for="hobby-1">Музыка</label>
+		<input id="hobby-1" name="hobby" type="checkbox" value="music" />
+
+		<label for="hobby-2">Спорт</label>
+		<input id="hobby-2" name="hobby" type="checkbox" value="sports" />
+
+		<label for="hobby-3">Чтение</label>
+		<input id="hobby-3" name="hobby" type="checkbox" value="reading" />
+	</div>
+	<div role="group">
+		<p>Выберите цвет футболки:</p>
+
+		<label for="color-1">Красный</label>
+		<input id="color-1" name="color" type="radio" value="red" checked />
+
+		<label for="color-2">Белый</label>
+		<input id="color-2" name="color" type="radio" value="white" />
+
+		<label for="color-3">Зелёный</label>
+		<input id="color-3" name="color" type="radio" value="green" />
+	</div>
+
+	<form>
+		<label>
+			Почта
+			<input type="email" name="email" />
+		</label>
+		****
+		<label>
+			Пароль
+			<input type="password" name="pwd" />
+		</label>
+	</form>
+
+	<input type="text" name="message" placeholder="Введите сообщение" />
+
+
+	<form>
+		<!-- Клик по тексту "Сообщение" поставит курсор в поле ввода -->
+		<label for="message">Сообщение</label>
+		<input type="text" id="message" />
+
+		<button type="submit">Отправить</button>
+	</form>
+</body>
+
+</html>
