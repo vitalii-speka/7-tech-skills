@@ -1,73 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/work11-12.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="./css/work11-12.css" />
-</head>
+	<body>
+		<label for="branch">Отделение:</label>
+		<input type="text" name="branch" id="branch" list="codes" />
 
-<body>
+		<datalist id="codes">
+			<option value="3600">Шевченковский район</option>
+			<option value="7493">Железоугорский район</option>
+			<option value="2701">Центральный район</option>
+			<option value="5692">Зелёногорский район</option>
+		</datalist>
+		<label for="fav">Выберите свой любимый браузер:</label>
+		<input list="browsers" name="fav" id="fav" />
+		<input list="browser1" name="fav" id="fav" івів />
+		<datalist id="browsers">
+			<option value="такое">Edge</option>
+			<option value="лучше">Firefox</option>
+			<option value="гуд">Chrome</option>
+			<option value="неее">Opera</option>
+			<option value="мейби">Safari</option>
+		</datalist>
+		<datalist id="browser1">
+			<option>Edg11e</option>
+			<option>1</option>
+			<option>Chro1me</option>
+			<option>Oper1a</option>
+			<option>Safa1ri</option>
+		</datalist>
+		<select name="month">
+			<optgroup label="Лето">
+				<option value="s6">Июнь</option>
+				<option value="s7">Июль</option>
+				<option value="s8">Август</option>
+			</optgroup>
 
-	<label for="avatar">Загрузить аватар</label>
-	<input type="file" id="avatar" name="avatar" accept="all" />
+			<optgroup label="Осень">
+				<option value="s9">Сентябрь</option>
+				<option value="s10">Октябрь</option>
+				<option value="s11">Ноябрь</option>
+			</optgroup>
+		</select>
 
+		<label for="size">Размер футболки</label>
+		<select id="size" name="size">
+			<option value="xs">Extra Small</option>
+			<option value="s">Small</option>
+			<option value="m">Medium</option>
+			<option value="l">Large</option>
+		</select>
 
-	<label for="age">Возраст</label>
-	<input id="age" type="range" name="age" min="0" max="120" value="30" />
+		<textarea name="comment" rows="12" cols="45" placeholder="Оставьте комментарий"></textarea>
 
-	<label for="age">Возраст</label>
+		<label for="color">Цвет</label>
 
-	<input id="age" name="age" type="number" min="18" max="120" step="0.3" />
+		<input id="color" name="color" type="color" />
 
-	<div role="group">
-		<p>Чем вы увлекаетесь?:</p>
+		<label for="birth_date">Дата рождения</label>
+		<input id="birth_date" name="birth_date" type="date" min="1920-01-01" max="2020-01-01" />
 
-		<label for="hobby-1">Музыка</label>
-		<input id="hobby-1" name="hobby" type="checkbox" value="music" />
+		<label for="avatar">Загрузить аватар</label>
+		<input type="file" id="avatar" name="avatar" accept="all" />
 
-		<label for="hobby-2">Спорт</label>
-		<input id="hobby-2" name="hobby" type="checkbox" value="sports" />
+		<label for="age">Возраст</label>
+		<input id="age" type="range" name="age" min="0" max="120" value="30" />
 
-		<label for="hobby-3">Чтение</label>
-		<input id="hobby-3" name="hobby" type="checkbox" value="reading" />
-	</div>
-	<div role="group">
-		<p>Выберите цвет футболки:</p>
+		<label for="age">Возраст</label>
 
-		<label for="color-1">Красный</label>
-		<input id="color-1" name="color" type="radio" value="red" checked />
+		<input id="age" name="age" type="number" min="18" max="120" step="0.3" />
 
-		<label for="color-2">Белый</label>
-		<input id="color-2" name="color" type="radio" value="white" />
+		<div role="group">
+			<p>Чем вы увлекаетесь?:</p>
 
-		<label for="color-3">Зелёный</label>
-		<input id="color-3" name="color" type="radio" value="green" />
-	</div>
+			<label for="hobby-1">Музыка</label>
+			<input id="hobby-1" name="hobby" type="checkbox" value="music" />
 
-	<form>
-		<label>
-			Почта
-			<input type="email" name="email" />
-		</label>
-		****
-		<label>
-			Пароль
-			<input type="password" name="pwd" />
-		</label>
-	</form>
+			<label for="hobby-2">Спорт</label>
+			<input id="hobby-2" name="hobby" type="checkbox" value="sports" />
 
-	<input type="text" name="message" placeholder="Введите сообщение" />
+			<label for="hobby-3">Чтение</label>
+			<input id="hobby-3" name="hobby" type="checkbox" value="reading" />
+		</div>
+		<div role="group">
+			<p>Выберите цвет футболки:</p>
 
+			<label for="color-1">Красный</label>
+			<input id="color-1" name="color" type="radio" value="red" checked />
 
-	<form>
-		<!-- Клик по тексту "Сообщение" поставит курсор в поле ввода -->
-		<label for="message">Сообщение</label>
-		<input type="text" id="message" />
+			<label for="color-2">Белый</label>
+			<input id="color-2" name="color" type="radio" value="white" />
 
-		<button type="submit">Отправить</button>
-	</form>
-</body>
+			<label for="color-3">Зелёный</label>
+			<input id="color-3" name="color" type="radio" value="green" />
+		</div>
 
+		<form>
+			<label>
+				Почта
+				<input type="email" name="email" />
+			</label>
+			****
+			<label>
+				Пароль
+				<input type="password" name="pwd" />
+			</label>
+		</form>
+
+		<input type="text" name="message" placeholder="Введите сообщение" />
+
+		<form>
+			<!-- Клик по тексту "Сообщение" поставит курсор в поле ввода -->
+			<label for="message">Сообщение</label>
+			<input type="text" id="message" />
+
+			<button type="submit">Отправить</button>
+		</form>
+	</body>
 </html>
