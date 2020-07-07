@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студия</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/work11-repeta.css" />
+</head>
+
+<body>
+    <br />
+    <form class="js-speaker-form"></form>
+    <label for="name">Имя</label>
+    <input type="text" name="name" id="name" />
+    <br />
+    <label for="tel">телефон</label>
+    <input type="tel" name="tel" id="tel" />
+    <br />
+    <label for="emeil">Почта</label>
+    <input type="emeil" name="emeil" id="emeil" />
+    <br />
+    <button type="submit">Отправить запрос</button>
+    <br />
+
+    <input type="checkbox" name="topic" value="html" id="html" />
+    <label for="html">HTML</label>
+    <input type="checkbox" name="topic" value="css" id="css" />
+    <label for="css">CSS</label>
+    <input type="checkbox" name="topic" value="js" id="js" />
+    <label for="js">JavaScript</label>
+
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
+    </script>
+
+</body>
+
+</html>

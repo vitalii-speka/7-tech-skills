@@ -8,15 +8,40 @@
 	</head>
 
 	<body>
+		<br />
+		<form class="js-speaker-form"></form>
+		<label for="name">Имя</label>
+		<input type="text" name="name" id="name" />
+		<br />
+		<label for="tel">телефон</label>
+		<input type="tel" name="tel" id="tel" />
+		<br />
+		<label for="emeil">Почта</label>
+		<input type="emeil" name="emeil" id="emeil" />
+		<br />
+		<button type="submit">Отправить запрос</button>
+		<br />
 		<label for="branch">Отделение:</label>
 		<input type="text" name="branch" id="branch" list="codes" />
 
+		<input type="checkbox" name="topic" value="html" id="html" />
+		<label for="html">HTML</label>
+		<input type="checkbox" name="topic" value="css" id="css" />
+		<label for="css">CSS</label>
+		<input type="checkbox" name="topic" value="js" id="js" />
+		<label for="js">JavaScript</label>
+
+		<br />
+		<br />
+		<br />
 		<datalist id="codes">
 			<option value="3600">Шевченковский район</option>
 			<option value="7493">Железоугорский район</option>
 			<option value="2701">Центральный район</option>
 			<option value="5692">Зелёногорский район</option>
 		</datalist>
+		<br />
+
 		<label for="fav">Выберите свой любимый браузер:</label>
 		<input list="browsers" name="fav" id="fav" />
 		<input list="browser1" name="fav" id="fav" івів />
@@ -34,6 +59,9 @@
 			<option>Oper1a</option>
 			<option>Safa1ri</option>
 		</datalist>
+		<br />
+		<br />
+
 		<select name="month">
 			<optgroup label="Лето">
 				<option value="s6">Июнь</option>
@@ -47,7 +75,7 @@
 				<option value="s11">Ноябрь</option>
 			</optgroup>
 		</select>
-
+		<br />
 		<label for="size">Размер футболки</label>
 		<select id="size" name="size">
 			<option value="xs">Extra Small</option>
@@ -55,7 +83,7 @@
 			<option value="m">Medium</option>
 			<option value="l">Large</option>
 		</select>
-
+		<br />
 		<textarea name="comment" rows="12" cols="45" placeholder="Оставьте комментарий"></textarea>
 
 		<label for="color">Цвет</label>
@@ -74,7 +102,7 @@
 		<label for="age">Возраст</label>
 
 		<input id="age" name="age" type="number" min="18" max="120" step="0.3" />
-
+		<br />
 		<div role="group">
 			<p>Чем вы увлекаетесь?:</p>
 
@@ -121,5 +149,17 @@
 
 			<button type="submit">Отправить</button>
 		</form>
+
+		<script>
+			(() => {
+				document.querySelector(".js-speaker-form").addEventListener("submit", e => {
+					e.preventDefault();
+
+					new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+
+					e.currentTarget.reset();
+				});
+			})();
+		</script>
 	</body>
 </html>
